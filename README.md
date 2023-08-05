@@ -12,7 +12,7 @@ A word is a maximal substring consisting of non-space characters only.
 | 'water bottle'   | 6                                                      |
 | 'a water bottle' | 6                                                      |
 | 'water bottle '  | 6                                                      |
-| 'water,bottle'   | Throw error 'Input must not include punctuation marks' |
 | 123              | Throw error 'Input must be a string'                   |
 | true             | Throw error 'Input must be a string'                   |
 | No input         | Throw error 'Input must be a string'                   |
+| 'water,bottle'   | Throw error 'Input must not include punctuation marks' |

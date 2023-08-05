@@ -19,4 +19,12 @@ describe("lengthOfLastWord", () => {
   it("returns length of the last word when the last index is a space", () => {
     expect(lengthOfLastWord("water bottle ")).toEqual(6);
   });
+
+  it("throws an error when input is not a string", () => {
+    expect(() => lengthOfLastWord(123)).toThrow("Input must be a string");
+    expect(() => lengthOfLastWord(true)).toThrow("Input must be a string");
+    expect(() => lengthOfLastWord(["water", "bottle"])).toThrow(
+      "Input must be a string"
+    );
+  });
 });
