@@ -27,4 +27,8 @@ describe("lengthOfLastWord", () => {
       "Input must be a string"
     );
   });
+
+  it("throws an error when there is no input", () => {
+    expect(() => lengthOfLastWord()).toThrow("Input must be a string");
+  });
 });
