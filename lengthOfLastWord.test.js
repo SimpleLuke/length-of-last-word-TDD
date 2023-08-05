@@ -31,4 +31,13 @@ describe("lengthOfLastWord", () => {
   it("throws an error when there is no input", () => {
     expect(() => lengthOfLastWord()).toThrow("Input must be a string");
   });
+
+  it("throws an error when the string include punctuation marks", () => {
+    expect(() => lengthOfLastWord("water,bottle")).toThrow(
+      "Input must not include punctuation marks"
+    );
+    expect(() => lengthOfLastWord("water bottle.")).toThrow(
+      "Input must not include punctuation marks"
+    );
+  });
 });
