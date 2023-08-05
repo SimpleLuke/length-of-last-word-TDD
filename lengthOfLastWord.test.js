@@ -15,4 +15,8 @@ describe("lengthOfLastWord", () => {
     expect(lengthOfLastWord("smart boy")).toEqual(3);
     expect(lengthOfLastWord("a water bottle")).toEqual(6);
   });
+
+  it("returns length of the last word when the last index is space", () => {
+    expect(lengthOfLastWord("water bottle ")).toEqual(6);
+  });
 });
